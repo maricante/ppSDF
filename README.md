@@ -7,9 +7,9 @@ Code examples for [*Marić et al.: Online learning of Continouous Signed Distanc
 This repository started as a fork of [the RDF codebase](https://github.com/yimingli1998/RDF).
 ## Dependencies
 
-Tested for *Python 3.10.12*
+Tested for Ubuntu 22.04 and *Python 3.10.12*. For setup with conda, see instructions below.
 
-To install dependencies, run:
+Alternatively, to install dependencies, run:
 
 `pip install -r requirements.txt`
 
@@ -23,7 +23,7 @@ and install the required packages:
 
 `python3 -m pip install -r requirements.txt`.
 
-On Ubuntu, you might also need to install the GNU C++ runtime library to run the visualization:
+You might also need to install the GNU C++ runtime library to run the visualization. E.g., for Ubuntu:
 
 `conda install -c conda-forge libstdcxx-n`
 
