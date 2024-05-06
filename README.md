@@ -2,34 +2,30 @@
 
 ![reconstructions](https://github.com/maricante/ppSDF/assets/13221985/af6102b2-06bf-4d0c-8a71-5c6b23784950)
 
-Code examples for [*Marić et al.: Online learning of Continouous Signed Distance Fields Using Piecewise Polynomials*](https://sites.google.com/view/pp-sdf/).
+Code examples for [*Marić et al.: Online learning of Continuous Signed Distance Fields Using Piecewise Polynomials*](https://sites.google.com/view/pp-sdf/).
 
 This repository started as a fork of [the RDF codebase](https://github.com/yimingli1998/RDF).
 ## Dependencies
 
-Tested for Ubuntu 22.04 and *Python 3.10.12*. For setup with conda, see instructions below.
+Tested with *Python 3.10.12* on *Ubuntu 22.04* and *macOS 14.4.1*.
 
-Alternatively, to install dependencies, run:
+Dependencies are listed in `requirements.txt`.
 
-`pip install -r requirements.txt`
+## Conda setup
 
-## Conda setup (tested)
+Setup a conda environment:
 
-To setup a conda environment, run:
+    conda create --name ppSDF python=3.10.12
 
-`conda create --name ppSDF python=3.10.12`,
+Install the required packages:
 
-and install the required packages:
-
-`python3 -m pip install -r requirements.txt`.
-
-You might also need to install the GNU C++ runtime library to run the visualization. E.g., for Ubuntu:
-
-`conda install -c conda-forge libstdcxx-n`
+    pip install -r requirements.txt
 
 ## Downloading the YCB dataset
 
-The desired objects from the [YCB dataset (*Calli et al.*)](http://ycb-benchmarks.s3-website-us-east-1.amazonaws.com/) can be downloaded by running `python ycb_downloader.py`
+The desired objects from the [YCB dataset (*Calli et al.*)](http://ycb-benchmarks.s3-website-us-east-1.amazonaws.com/) can be downloaded by running
+
+    python ycb_downloader.py
 
 Objects can be selected by commenting/uncommenting elements in the `objects_to_download` list inside the script.
 
@@ -49,11 +45,13 @@ To run the example script with the desired arguments:
 
 For example, to approximate the '035_power_drill' object with 5 segments per input dimension:
 
-`python reconstruct.py --n_seg=5 --object=035_power_drill`
+    python reconstruct.py --n_seg=5 --object=035_power_drill
 
 To run with default arguments:
 
-`python reconstruct.py`
+    python reconstruct.py
+
+## License
 
 Maintained by Ante MARIĆ and licensed under the MIT License.
 
