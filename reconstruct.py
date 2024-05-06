@@ -60,7 +60,7 @@ if __name__ == '__main__':
 
     # test object and number of samples
     parser.add_argument('--object', type=str, default='035_power_drill')
-    parser.add_argument('--n_data', type=int, default=1000)
+    parser.add_argument('--n_data', type=int, default=1200)
 
     # visualization options
     parser.add_argument('--cut_x', type=bool, default=False)
@@ -68,6 +68,9 @@ if __name__ == '__main__':
     parser.add_argument('--cut_z', type=bool, default=True)
 
     args = parser.parse_args()
+    if args.device == 'cuda' and not torch.cuda.is_available():
+        print("CUDA is not available. Using CPU...")
+        args.device = 'cpu'
     device = args.device
     print(device)
 
@@ -101,8 +104,10 @@ if __name__ == '__main__':
                    qd = args.qd, qn = args.qn, qt = args.qt,
                    sigma=args.sigma, device=device)
     if os.path.exists(f"priors/sphere_weights_4fun_{args.n_seg}seg.pt"):
-        model.w = torch.load(f"priors/sphere_weights_4fun_{args.n_seg}seg.pt").to(device)
+        model.w = torch.load(f"priors/sphere_weights_4fun_{args.n_seg}seg.pt", map_location=device)
     else:
+        if not os.path.exists("priors"):
+            os.makedirs("priors")
         model.init_w_sphere(radius=0.4, center=torch.tensor(pcd.get_center()).reshape(1, 3))
         torch.save(model.w, f"priors/sphere_weights_4fun_{args.n_seg}seg.pt")
 
