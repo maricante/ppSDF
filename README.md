@@ -1,10 +1,10 @@
 # ppSDF
 
-![reconstructions_alpha](https://github.com/maricante/ppSDF/assets/13221985/ad930a4b-7412-4ee1-903a-bcb3bd8c454b)
-This repository contains code examples for [*Marić et al.: Online learning of Continouous Signed Distance Fields Using Piecewise Polynomials*](https://sites.google.com/view/pp-sdf/).
+![reconstructions](https://github.com/maricante/ppSDF/assets/13221985/af6102b2-06bf-4d0c-8a71-5c6b23784950)
 
-This repository is a fork of [the RDF codebase](https://github.com/yimingli1998/RDF).
+Code examples for [*Marić et al.: Online learning of Continouous Signed Distance Fields Using Piecewise Polynomials*](https://sites.google.com/view/pp-sdf/).
 
+This repository started as a fork of [the RDF codebase](https://github.com/yimingli1998/RDF).
 ## Dependencies
 
 Tested on *Python 3.10.12*
