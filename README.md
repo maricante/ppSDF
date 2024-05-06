@@ -1,14 +1,20 @@
 # ppSDF
 
-This repository contains code examples for
-
-[*Marić et al.: Online learning of Continouous Signed Distance Fields Using Piecewise Polynomials*](https://sites.google.com/view/pp-sdf/)
+This repository contains code examples for [*Marić et al.: Online learning of Continouous Signed Distance Fields Using Piecewise Polynomials*](https://sites.google.com/view/pp-sdf/)
 
 This repository is a fork of [the RDF codebase](https://github.com/yimingli1998/RDF).
 
-## Setup
+## Dependencies
 
-First, setup a conda environment:
+Tested on *Python 3.10.12*
+
+To install dependencies, run:
+
+`pip install -r requirements.txt`
+
+## Conda setup (tested)
+
+To setup a conda environment, run:
 
 `conda create --name ppSDF python=3.10.12`,
 
