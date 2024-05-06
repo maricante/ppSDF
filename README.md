@@ -9,7 +9,9 @@ This repository started as a fork of [the RDF codebase](https://github.com/yimin
 
 Tested with *Python 3.10.12* on *Ubuntu 22.04* and *macOS 14.4.1*.
 
-Dependencies are listed in `requirements.txt`.
+Python dependencies are listed in `requirements.txt`.
+
+*(Optional)* For GPU acceleration, a compatible version of CUDA is required.
 
 ## Conda setup
 
