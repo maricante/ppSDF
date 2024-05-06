@@ -7,7 +7,7 @@ Code examples for [*Marić et al.: Online learning of Continouous Signed Distanc
 This repository started as a fork of [the RDF codebase](https://github.com/yimingli1998/RDF).
 ## Dependencies
 
-Tested on *Python 3.10.12*
+Tested for *Python 3.10.12*
 
 To install dependencies, run:
 
