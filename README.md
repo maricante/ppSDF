@@ -2,16 +2,16 @@
 
 ![reconstructions](https://github.com/maricante/ppSDF/assets/13221985/af6102b2-06bf-4d0c-8a71-5c6b23784950)
 
-Code examples for [*Marić et al.: Online learning of Continuous Signed Distance Fields Using Piecewise Polynomials*](https://sites.google.com/view/pp-sdf/).
+Code examples for [*Online learning of Continuous Signed Distance Fields Using Piecewise Polynomials*](https://sites.google.com/view/pp-sdf/).
 
 This repository started as a fork of [the RDF codebase](https://github.com/yimingli1998/RDF).
 ## Dependencies
 
 Tested with *Python 3.10.12* on *Ubuntu 22.04* and *macOS 14.4.1*.
 
-Python dependencies are listed in `requirements.txt`.
+Python dependencies are listed in `requirements.txt`. *Open3D* might require additonal setup of a C++ compiler, if not already present.
 
-*(Optional)* For GPU acceleration, a compatible version of CUDA is required.
+*(Optional)* For GPU acceleration, a compatible version of CUDA is required. Tested for CUDA 11.5.
 
 ## Conda setup
 
