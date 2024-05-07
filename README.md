@@ -15,9 +15,13 @@ Python dependencies are listed in `requirements.txt`. *Open3D* additionally requ
 
 ## Conda setup
 
-Setup a conda environment:
+Setup a conda new environment:
 
     conda create --name ppSDF python=3.10.12
+
+Activate the environment:
+
+    conda activate ppSDF
 
 Install the required packages:
 
@@ -47,7 +51,7 @@ To run the example script with the desired arguments:
 
 For example, to approximate the '035_power_drill' object with 5 segments per input dimension and 1000 training samples:
 
-    python reconstruct.py --object=035_power_drill --n_seg=5 --n_data=1000`
+    python reconstruct.py --object=035_power_drill --n_seg=5 --n_data=1000
 
 To run with default arguments:
 
