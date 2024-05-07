@@ -45,9 +45,9 @@ To run the example script with the desired arguments:
 - `n_data` - number of training sample points
 - `cut_x`, `cut_y`, `cut_z` - select axis to cut for visualization
 
-For example, to approximate the '035_power_drill' object with 5 segments per input dimension:
+For example, to approximate the '035_power_drill' object with 5 segments per input dimension and 1000 training samples:
 
-    python reconstruct.py --n_seg=5 --object=035_power_drill
+    python reconstruct.py --object=035_power_drill --n_seg=5 --n_data=1000`
 
 To run with default arguments:
 
