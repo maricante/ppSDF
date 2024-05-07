@@ -9,9 +9,9 @@ This repository started as a fork of [the RDF codebase](https://github.com/yimin
 
 Tested with *Python 3.10.12* on *Ubuntu 22.04* and *macOS 14.4.1*.
 
-Python dependencies are listed in `requirements.txt`. *Open3D* might require additonal setup of a C++ compiler, if not already present.
+Python dependencies are listed in `requirements.txt`. *Open3D* additionally requires a working C++ compiler.
 
-*(Optional)* For GPU acceleration, a compatible version of CUDA is required. Tested for CUDA 11.5.
+*(Optional)* For GPU acceleration, a compatible version of CUDA is required (tested with CUDA 11.5).
 
 ## Conda setup
 
