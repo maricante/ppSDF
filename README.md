@@ -2,7 +2,7 @@
 
 ![reconstructions](https://github.com/maricante/ppSDF/assets/13221985/af6102b2-06bf-4d0c-8a71-5c6b23784950)
 
-Code examples for [*Online learning of Continuous Signed Distance Fields Using Piecewise Polynomials*](https://sites.google.com/view/pp-sdf/).
+Code examples for [*Online Learning of Continuous Signed Distance Fields Using Piecewise Polynomials*](https://sites.google.com/view/pp-sdf/).
 
 This repository started as a fork of [the RDF codebase](https://github.com/yimingli1998/RDF).
 ## Dependencies
